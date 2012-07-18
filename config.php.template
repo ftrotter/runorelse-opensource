@@ -1,0 +1,25 @@
+<?php
+	//this is the stock config template. 
+	//for security (mine, really, I do not want my data on github) keep it one directory up 
+	//so you will need to copy this to just ../config.php
+
+	
+	//get these from paypal. You will also need to get approved for the Mass Pay API
+	//which could take some time...
+	$GLOBALS['API_UserName'] = '';
+	$GLOBALS['API_Password'] = '';
+	$GLOBALS['API_Signature'] = '';
+	//get these from fitbit, this is usually instant...
+	$GLOBALS['FitbitConsumerKey'] = '';
+	$GLOBALS['FitbitConsumerSecret'] = '';
+	//get these from your authorization of your own user at fitbit_callback.php...
+	//you will need to have the fitbit app approved before this will work...
+	$GLOBALS['FitbitOAuthSecret'] = '';
+	$GLOBALS['FitbitOAuthToken'] = '';
+
+
+	$GLOBALS['steps_per_day'] = 10000; //your step goal per day
+	$GLOBALS['amount_to_risk'] = 1.00; //what to pay if you to not step up... oh God I love puns.
+	
+
+?>
